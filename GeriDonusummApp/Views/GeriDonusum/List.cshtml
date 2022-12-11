@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Customer>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+    <div>
+        <table>
+
+            <thead>
+                <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var customer in Model)
+                {
+                <tr>
+                    <td>@customer.Name</td>
+                    <td>@customer.Email</td>
+                    <td>@customer.Phone</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+}

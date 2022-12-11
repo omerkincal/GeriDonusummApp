@@ -1,0 +1,19 @@
+﻿@model Customer
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <h1>Sayın @Model.Name</h1>
+    <h2> @if(Model.WillAttend==true)
+            {
+                @:Kayıt olduğun için tşk.
+            }
+            else
+            {
+                @:Kayıt olmadığın için üzgünüz :(
+            }
+    </h2>
+    <h3>Kayıt yapanları <a asp-action="List">listele</a></h3>
+}
+
+
